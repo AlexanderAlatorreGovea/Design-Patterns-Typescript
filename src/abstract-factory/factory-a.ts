@@ -34,16 +34,21 @@ export class FactoryA {
     try {
       if (some_property === "a") {
         return new ConcreteProductA();
-      } else if (some_property === "b") {
-        return new ConcreteProductB();
-      } else if (some_property === "c") {
-        return new ConcreteProductC();
-      } else {
-        throw new Error("Class Not Found");
       }
+
+      if (some_property === "b") {
+        return new ConcreteProductB();
+      }
+
+      if (some_property === "c") {
+        return new ConcreteProductC();
+      }
+
+      throw new Error("Class Not Found");
     } catch (e) {
       console.log(e);
     }
+
     return new ConcreteProduct();
   }
 }

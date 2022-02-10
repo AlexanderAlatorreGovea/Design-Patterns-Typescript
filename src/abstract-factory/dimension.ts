@@ -1,5 +1,5 @@
 export type dimension = {
-    height: number
-    width: number
-    depth: number
-}
+  height: number;
+  width: number;
+  depth: number;
+};

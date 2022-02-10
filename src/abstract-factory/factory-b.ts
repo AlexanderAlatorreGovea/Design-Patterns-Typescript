@@ -32,14 +32,15 @@ class ConcreteProductC extends ConcreteProduct {
 export class FactoryB {
   static getObject(some_property: string): IProductB {
     try {
-      if (some_property === "a") {
-        return new ConcreteProductA();
-      } else if (some_property === "b") {
-        return new ConcreteProductB();
-      } else if (some_property === "c") {
-        return new ConcreteProductC();
-      } else {
-        throw new Error("Class Not Found");
+      switch (some_property) {
+        case "a":
+          return new ConcreteProductA();
+        case "b":
+          return new ConcreteProductB();
+        case "c":
+          return new ConcreteProductC();
+        default:
+          throw new Error("Class Not Found");
       }
     } catch (e) {
       console.log(e);
