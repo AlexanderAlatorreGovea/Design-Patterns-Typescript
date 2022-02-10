@@ -1,4 +1,4 @@
-import {Chair} from './chair'
+import { Chair } from './chair'
 
 export default class BigChair extends Chair {
     constructor() {

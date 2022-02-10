@@ -2,36 +2,33 @@
 // The Factory Concept
 class ConcreteProduct {
     constructor() {
-        this.name = '';
-    }
-    createObject() {
-        return this;
+        this.name = "";
     }
 }
 class ConcreteProductA extends ConcreteProduct {
     constructor() {
         super();
-        this.name = 'ConcreteProductA';
+        this.name = "ConcreteProductA";
     }
 }
 class ConcreteProductB extends ConcreteProduct {
     constructor() {
         super();
-        this.name = 'ConcreteProductB';
+        this.name = "ConcreteProductB";
     }
 }
 class ConcreteProductC extends ConcreteProduct {
     constructor() {
         super();
-        this.name = 'ConcreteProductC';
+        this.name = "ConcreteProductC";
     }
 }
 class Creator {
     static createObject(someProperty) {
-        if (someProperty === 'a') {
+        if (someProperty === "a") {
             return new ConcreteProductA();
         }
-        else if (someProperty === 'b') {
+        else if (someProperty === "b") {
             return new ConcreteProductB();
         }
         else {
@@ -40,5 +37,5 @@ class Creator {
     }
 }
 // The Client
-const PRODUCT = Creator.createObject('b');
+const PRODUCT = Creator.createObject("b");
 console.log(PRODUCT.name);
