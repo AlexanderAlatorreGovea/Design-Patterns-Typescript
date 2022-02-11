@@ -13,10 +13,9 @@ class MyClass implements IProtoType {
   constructor(field: number[]) {
     this.field = field; // any value of any type
   }
-
   clone() {
-    return Object.assign({}, this); // shallow copy
-    // return JSON.parse(JSON.stringify(this)); //deep copy
+    //return Object.assign({}, this); // shallow copy
+     return JSON.parse(JSON.stringify(this)); //deep copy
   }
 }
 

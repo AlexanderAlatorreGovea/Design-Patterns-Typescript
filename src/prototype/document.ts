@@ -2,8 +2,8 @@
 import ProtoType from "./iprototype";
 
 export default class Document implements ProtoType {
-  name: string;
-  array: [number[], number[]];
+  private name: string;
+  private array: [number[], number[]];
 
   constructor(name: string, array: [number[], number[]]) {
     this.name = name;
@@ -20,6 +20,7 @@ export default class Document implements ProtoType {
       // default, results in a shallow copy of the Document
       array = Object.assign([], this.array);
     }
+
     return new Document(this.name, array);
   }
 }
