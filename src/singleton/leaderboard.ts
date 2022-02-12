@@ -8,6 +8,7 @@ export default class Leaderboard {
     if (Leaderboard.instance) {
       return Leaderboard.instance;
     }
+    
     Leaderboard.instance = this;
   }
 
