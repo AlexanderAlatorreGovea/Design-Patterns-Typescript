@@ -13,6 +13,7 @@ export default class CubeA implements ICubeA {
       console.log(
         `Company A built Cube with dimensions ${width}x${height}x${depth}`
       );
+      
       CubeA.last_time = now;
       return true;
     }

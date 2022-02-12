@@ -11,7 +11,9 @@ const manufactureCube = () => {
   const height = Math.floor(Math.random() * 10) + 1;
   const depth = Math.floor(Math.random() * 10) + 1;
   let cube = new CubeA();
+
   let success = cube.manufacture(width, height, depth);
+  
   if (success) {
     counter = counter + 1;
   } else {

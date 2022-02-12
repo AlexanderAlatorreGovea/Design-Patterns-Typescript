@@ -56,4 +56,4 @@ ADAPTED.forEach((item) => {
 });
 
 const adapt = new ClassB();
-console.log(adapt.methodB())
+console.log(adapt.methodB());
