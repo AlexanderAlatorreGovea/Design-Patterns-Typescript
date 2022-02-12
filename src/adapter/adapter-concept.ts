@@ -1,55 +1,55 @@
 // Adapter Concept Sample Code
 
 interface IA {
-    methodA(): void
+  methodA(): void;
 }
 
 class ClassA implements IA {
-    methodA() {
-        console.log('method A')
-    }
+  methodA() {
+    console.log("method A");
+  }
 }
 
 interface IB {
-    methodB(): void
+  methodB(): void;
 }
 
 class ClassB implements IB {
-    methodB() {
-        console.log('method B')
-    }
+  methodB() {
+    console.log("method B");
+  }
 }
 
 class ClassBAdapter implements IA {
-    // ClassB does not have a methodA, so we can create an adapter
+  // ClassB does not have a methodA, so we can create an adapter
 
-    #classB: ClassB
+  #classB: ClassB;
 
-    constructor() {
-        this.#classB = new ClassB()
-    }
+  constructor() {
+    this.#classB = new ClassB();
+  }
 
-    methodA() {
-        'calls the class b method_b instead'
-        this.#classB.methodB()
-    }
+  methodA() {
+    "calls the class b method_b instead";
+    this.#classB.methodB();
+  }
 }
 
 // The Client
 // Before the adapter I need to test the objects class to know which
 // method to call.
-const ITEMS = [new ClassA(), new ClassB()]
+const ITEMS = [new ClassA(), new ClassB()];
 ITEMS.forEach((item) => {
-    if (item instanceof ClassB) {
-        item.methodB()
-    } else {
-        item.methodA()
-    }
-})
+  if (item instanceof ClassB) {
+    return item.methodB();
+  }
+  
+  item.methodA();
+});
 
 // After creating an adapter for ClassB I can reuse the same method
 // signature as ClassA (preferred)
-const ADAPTED = [new ClassA(), new ClassBAdapter()]
+const ADAPTED = [new ClassA(), new ClassBAdapter()];
 ADAPTED.forEach((item) => {
-    item.methodA()
-})
+  item.methodA();
+});
