@@ -17,19 +17,26 @@ class Decorator implements IComponent {
     this.#object = object;
   }
 
-  method(): string {
+  method() {
     return `Decorator Method(${this.#object.method()})`;
+  }
+
+  newMessage() {
+    return `The Decorator is adding extra functionality to the ${this.#object.method()} 
+     by taking it as an argument
+    `;
   }
 }
 
 // The Client
 const COMPONENT = new Component();
-console.log(COMPONENT.method());
+//console.log(COMPONENT.method());
 
 // The component can be decorated
 const Decorated = new Decorator(COMPONENT);
-console.log(Decorated.method());
+//console.log(Decorated.method());
+console.log(Decorated.newMessage());
 
 // The decorated component can be decorated again
 const Decorated2 = new Decorator(Decorated);
-console.log(Decorated2.method());
+//console.log(Decorated2.method());
