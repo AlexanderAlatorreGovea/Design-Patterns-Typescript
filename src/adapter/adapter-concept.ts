@@ -35,6 +35,7 @@ class ClassBAdapter implements IA {
   }
 }
 
+// This is without the adapter.
 // The Client
 // Before the adapter I need to test the objects class to know which
 // method to call.
@@ -43,7 +44,7 @@ ITEMS.forEach((item) => {
   if (item instanceof ClassB) {
     return item.methodB();
   }
-  
+
   item.methodA();
 });
 
@@ -53,3 +54,6 @@ const ADAPTED = [new ClassA(), new ClassBAdapter()];
 ADAPTED.forEach((item) => {
   item.methodA();
 });
+
+const adapt = new ClassB();
+console.log(adapt.methodB())
