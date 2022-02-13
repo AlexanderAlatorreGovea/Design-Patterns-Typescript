@@ -4,6 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const dispenser10_1 = require("./dispenser10");
 const dispenser20_1 = require("./dispenser20");
 const dispenser50_1 = require("./dispenser50");
+
 class ATMDispenserChain {
   constructor() {
     // initializing the successors chain
