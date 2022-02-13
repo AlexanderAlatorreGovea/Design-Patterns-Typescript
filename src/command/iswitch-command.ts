@@ -1,3 +1,3 @@
 export default interface ISwitchCommand {
-    execute(commandName: string): void
+  execute(commandName: string): void;
 }
