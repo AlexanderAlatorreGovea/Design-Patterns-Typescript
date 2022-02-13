@@ -30,6 +30,7 @@ class Subject {
         });
     }
 }
+dist/observer/observer-concept.js
 _Subject_observers = new WeakMap();
 class Observer {
     constructor(observable) {
