@@ -18,6 +18,7 @@ export class DataController implements IDataController {
     if (DataController.instance) {
       return DataController.instance;
     }
+    
     DataController.instance = this;
   }
 

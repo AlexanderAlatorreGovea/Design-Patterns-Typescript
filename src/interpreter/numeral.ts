@@ -1,14 +1,14 @@
-import IAbstractExpression from "./iabstract-expression"
+import IAbstractExpression from "./iabstract-expression";
 export default class Numeral implements IAbstractExpression {
-    // Terminal Expression
+  // Terminal Expression
 
-    value: number
+  value: number;
 
-    constructor(value: string | number) {
-        this.value = typeof value === 'string' ? parseInt(value) : value
-    }
+  constructor(value: string | number) {
+    this.value = typeof value === "string" ? parseInt(value) : value;
+  }
 
-    interpret(): number {
-        return this.value
-    }
+  interpret(): number {
+    return this.value;
+  }
 }
