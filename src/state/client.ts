@@ -35,6 +35,7 @@ class StateContext implements IExampleState {
         this.request = Finished.prototype.request;
         break;
     }
+
     this.#state = value;
   }
 
