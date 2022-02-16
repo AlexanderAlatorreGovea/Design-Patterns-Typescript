@@ -31,7 +31,7 @@ class Part implements IVisitable {
     this.parts.forEach((part) => {
       part.accept(visitor);
     });
-    visitor.visit(this);
+    visitor.visit(this)
   }
 }
 
@@ -71,3 +71,4 @@ class CalculatePartTotalsVisitor implements IVisitor {
 const CALC_TOTALS_VISITOR = new CalculatePartTotalsVisitor();
 Part_A.accept(CALC_TOTALS_VISITOR);
 console.log(CALC_TOTALS_VISITOR.totalValue);
+
