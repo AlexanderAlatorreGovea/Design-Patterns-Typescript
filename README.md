@@ -30,10 +30,6 @@ and courses on [Udemy](https://www.udemy.com/course/design-patterns-typescript/?
 > [Design Pattern In TypeScript](https://www.amazon.com/dp/B0948BCH24) **(Paperback/Kindle)** includes Video Access Codes to view videos for FREE from the official documentation website at [https://sbcode.net/typescript/](https://sbcode.net/typescript/)
 
 ---
-**TIP** 
-> Get **Udemy Discount Coupons** at [https://sbcode.net/coupons](https://sbcode.net/coupons)
-
----
 
 
 ## Setup Project
