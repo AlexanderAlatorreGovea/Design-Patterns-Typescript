@@ -85,4 +85,3 @@ So, in the book, you will learn about these 23 Design Patterns,
 
 ## Pattern Types
 
-*...Refer to Book or Videos for extra 
