@@ -82,5 +82,3 @@ So, in the book, you will learn about these 23 Design Patterns,
     - [Strategy](src/strategy)
     - [Template Method](src/template-method)
     - [Visitor](src/visitor)
-
-
