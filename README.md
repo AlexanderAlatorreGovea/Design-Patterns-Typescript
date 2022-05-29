@@ -4,8 +4,6 @@ This repository focuses on the 23 famous GoF (Gang of Four) Design Patterns impl
 
 It is supplementary to my book titled **Design Patterns In TypeScript**
 
-<img style="float:left; min-width:150px;" src="src/img/dp_typescript_250.jpg">
-
 &nbsp;<a href="https://www.amazon.com/dp/B0948BCH24"><img src="src/img/flag_us.gif">&nbsp; https://www.amazon.com/dp/B0948BCH24</a><br/>
 &nbsp;<a href="https://www.amazon.co.uk/dp/B0948BCH24"><img src="src/img/flag_uk.gif">&nbsp; https://www.amazon.co.uk/dp/B0948BCH24</a><br/>
 &nbsp;<a href="https://www.amazon.in/dp/B094716FD6"><img src="src/img/flag_in.gif">&nbsp; https://www.amazon.in/dp/B094716FD6</a><br/>
